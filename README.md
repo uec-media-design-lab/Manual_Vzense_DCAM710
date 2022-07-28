@@ -70,16 +70,13 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 
 ## UnityとのUDP通信
 
-- 参考にしたページ
+- 参考にしたページ  
 	[C++とUnity(C#)を使ったUDP通信](https://trollface.hatenablog.com/entry/2019/02/17/162042)
 
 ### 手順
 1. C++側での送信プログラム
 	- UDP.cppとUDP.h(uec-media-design-lab/Manual_Vzense_DCAM710/Vzense SDK/Samples/FrameViewer_DCAM710/)をプロジェクトに新規で作成する。（Send()関数）
-
-	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651222012820.png)
-
-	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651221953504.png)
+![image](https://user-images.githubusercontent.com/67621904/181468547-9f76b67f-6702-4ab8-acdd-f69b64b3e1a5.png)
 
 1. プロパティの設定
 	- プロジェクト＞プロパティ＞リンカー＞入力＞追加の依存ファイルに`ws2_32.lib`を追加する。(UDP/TCP通信用)
