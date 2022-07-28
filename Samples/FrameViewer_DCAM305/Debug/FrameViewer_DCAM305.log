@@ -1,0 +1,3 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output ディレクトリの末尾がスラッシュではありません。Output ディレクトリが適切に評価されるようにするために、このビルド インスタンスによってスラッシュが追加されます。
+  FrameViewer_DCAM305.cpp
+C:\Users\a1810\Downloads\Vzense_SDK_Windows-master\Vzense_SDK_Windows-master\Samples\FrameViewer_DCAM305\FrameViewer_DCAM305.cpp(5,10): fatal error C1083: include ファイルを開けません。'opencv2/opencv.hpp':No such file or directory

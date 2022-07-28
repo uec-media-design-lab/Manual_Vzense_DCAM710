@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(499,5): warning MSB8004: Output ディレクトリの末尾がスラッシュではありません。Output ディレクトリが適切に評価されるようにするために、このビルド インスタンスによってスラッシュが追加されます。
+  FrameViewer_DCAM710.cpp
+C:\opencv\build\include\opencv2\core\mat.hpp(1965,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\opencv\build\include\opencv2\core\persistence.hpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\opencv\build\include\opencv2\core\utility.hpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\opencv\build\include\opencv2\core\utility.hpp(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\a1810\OneDrive\ドキュメント\Vzense_SDK_Windows-master\Include\DCAM710\Vzense_api_710.h(411,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\a1810\OneDrive\ドキュメント\Vzense_SDK_Windows-master\Samples\FrameViewer_DCAM710\FrameViewer_DCAM710.cpp(9,10): fatal error C1083: include ファイルを開けません。'UDP.h':No such file or directory
+  UDP.cpp
+C:\Users\a1810\OneDrive\ドキュメント\Vzense_SDK_Windows-master\Samples\FrameViewer_DCAM710\UDP.cpp(4,10): fatal error C1083: include ファイルを開けません。'UDP.h':No such file or directory
+  コードを生成中...
