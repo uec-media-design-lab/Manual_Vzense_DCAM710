@@ -1,7 +1,7 @@
 # Manual_Vzense_DCAM710
-VzenseSDK_Windowsを使って得たVCAM710の深度情報をUnityに送る
+VzenseSDK_Windowsを使って得たVCAM710の深度情報をUnityに送る。
 
-小泉研ページにもまとめてある↓  
+少し前に小泉研ページにもまとめた↓  
 ・VzenseSDKの動かし方  
 https://uecmediadesign.synology.me/wordpress/?p=12745  
 ・UnityとのUDP通信  
@@ -69,20 +69,13 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 
 
 ## UnityとのUDP通信
-- UDPかTCPか
-	- どっちがいいのかよくわかってない
-	[TCPとUDPの違いとは？](https://hldc.co.jp/blog/2019/07/11/2819/)
-	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651221599127.png)
-	- 参考にした記事でUDP使ってたのでとりあえずUDPでやる。
 
 - 参考にしたページ
 	[C++とUnity(C#)を使ったUDP通信](https://trollface.hatenablog.com/entry/2019/02/17/162042)
-	こっちはTCP
-	[【Unity】【VC++】C++とUnity で相互通信したい！（TCP/IP）](https://usupra.wordpress.com/2019/04/22/c%E3%81%A8unity-%E3%81%A7tcp-ip%E9%80%9A%E4%BF%A1%E3%81%97%E3%81%A6%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E3%82%84%E3%82%8A%E5%8F%96%E3%82%8A%E3%82%92%E3%81%99%E3%82%8B/)
 
 ### 手順
 1. C++側での送信プログラム
-	- [UDP.cppとUDP.h](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/UDP.zip "UDP")をプロジェクトに新規で作成する。（Send()関数）
+	- UDP.cppとUDP.h()をプロジェクトに新規で作成する。（Send()関数）
 
 	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651222012820.png)
 
@@ -101,14 +94,6 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651228245739.png)
 
 1. 動かす
-	- send関数が呼ばれるとC++側からUDP通信で「End!!!!!」と送られる。
-	今回はC++プログラムの実行が終了する直前にSendが呼ばれている。
-	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651227856743.png)
+	- send関数が呼ばれるとC++側からUDP通信で深度情報が送られる。
 
-------------
-
-### 一番カメラに近い点を探索(C++側)
-- FPSが30→21くらいまで下がった。見た感じはあまりわからない。
-![](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/Depth-Image-2022_04_29-17_27_25-300x225.png)
-![](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/Depth-Image-2022_04_29-17_26_35-300x225.png)
 
