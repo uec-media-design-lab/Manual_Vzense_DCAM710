@@ -9,17 +9,17 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 
 ## VzenseSDKの動かし方
 	
-- 環境
-	Windows 11
-	Visual Studio 2019
-	OpenCV3.0.0
+- 環境  
+	Windows 11  
+	Visual Studio 2019  
+	OpenCV3.0.0  
 	
-- 参考にしたページ
-	[Visual StudioでOpenCVを使う方法](https://betashort-lab.com/%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0/cpp/visual-studio%e3%81%a7opencv%e3%82%92%e4%bd%bf%e3%81%86%e6%96%b9%e6%b3%95/)
+- 参考にしたページ  
+	[Visual StudioでOpenCVを使う方法](https://betashort-lab.com/%e3%83%97%e3%83%ad%e3%82%b0%e3%83%a9%e3%83%9f%e3%83%b3%e3%82%b0/cpp/visual-studio%e3%81%a7opencv%e3%82%92%e4%bd%bf%e3%81%86%e6%96%b9%e6%b3%95/)  
 	[VisualStudio2019+OpenCVのデバッグでDLLが見つからない](https://qiita.com/oppuna/items/4c13ae7d33db46cc69b4)
 
 ### 手順
-1. VzenseのSDK(Vzense_SDK_Windows)を[GitHub](https://github.com/Vzense/Vzense_SDK_Windows)からダウンロードする
+1. VzenseのSDK(Vzense_SDK_Windows)を[GitHub](https://github.com/Vzense/Vzense_SDK_Windows)からダウンロードする（uec-media-design-lab/Manual_Vzense_DCAM710/Vzense SDKを使用しても良い。）
 	- 展開する
 	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651150987735.png)
 	
@@ -75,7 +75,7 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 
 ### 手順
 1. C++側での送信プログラム
-	- UDP.cppとUDP.h()をプロジェクトに新規で作成する。（Send()関数）
+	- UDP.cppとUDP.h(uec-media-design-lab/Manual_Vzense_DCAM710/Vzense SDK/Samples/FrameViewer_DCAM710/)をプロジェクトに新規で作成する。（Send()関数）
 
 	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651222012820.png)
 
@@ -90,10 +90,9 @@ https://uecmediadesign.synology.me/wordpress/?p=12775
 		![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651227976043.png)
 
 1. Unity側での受信プログラム
-	- 空オブジェクトを作って[UDPReceive](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/UDPReceive.zip "UDPReceive")スクリプトをアタッチする
+	- 空オブジェクトを作ってUDPReceive(uec-media-design-lab/Manual_Vzense_DCAM710/Unity_Script/UDPReceive.cs)スクリプトをアタッチする
 	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651228245739.png)
 
 1. 動かす
 	- send関数が呼ばれるとC++側からUDP通信で深度情報が送られる。
-
-
+	- 深度情報を使ったアプリケーションを作成できる。
