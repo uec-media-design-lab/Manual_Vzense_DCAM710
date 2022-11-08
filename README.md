@@ -1,7 +1,6 @@
 # Manual_Vzense_DCAM710
 VzenseSDK_Windowsを使って得たVCAM710の深度情報をUnityに送る。
 
-少し前に小泉研ページにもまとめた↓  
 
 ## VzenseSDKの動かし方
 	
@@ -61,7 +60,7 @@ VzenseSDK_Windowsを使って得たVCAM710の深度情報をUnityに送る。
 
 - あとはサンプルコードを都度書き換えれば深度情報とか表示できそう。
 	- ↓コンソールに中心の深度情報を表示してみた。
-	![file]()
+	![file](https://uecmediadesign.synology.me/wordpress/wp-content/uploads/2022/04/image-1651155309731.png)
 
 
 ## UnityとのUDP通信
